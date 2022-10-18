@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/overlays.css" />
+    <link rel="stylesheet" href="/styles/configuration.css">
   </head>
   <body>
     <div id="backdrop"></div>
@@ -21,10 +22,10 @@
       <p>Build with HTML, CSS and JavaScript and - of course - lots of love!</p>
     </header>
     <main>
-      <aside class="modal">
+      <aside class="modal" id="config-overlay">
         <h2>Choose your name</h2>
         <form>
-          <div>
+          <div class="form-control">
             <label for="playername">Player Name</label>
             <input type="text" name="username" id="playername" />
           </div>
@@ -40,7 +41,7 @@
             <article>
               <h2>Player 1</h2>
               <h3>PLAYER NAME</h3>
-              <p>X</p>
+              <p class="player-symbol">X</p>
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
@@ -48,7 +49,7 @@
             <article>
               <h2>Player 2</h2>
               <h3>PLAYER NAME</h3>
-              <p>O</p>
+              <p class="player-symbol">O</p>
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
