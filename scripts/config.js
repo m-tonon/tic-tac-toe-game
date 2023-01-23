@@ -18,7 +18,7 @@ function savePlayerConfig(event) {
   const enteredPlayername = formData.get('playername').trim(); // get('input-form-name') ==> trim() '  Mat  ' = 'Mat'
 
   // empty string is consider false
-  if (!enteredPlayername) {
+  if (!enteredPlayername) { // shows error message if invalid enter name
     event.target.firstElementChild.classList.add('error');
     errorsOutputElement.textContent = 'Please enter a valid name!';
     return; // stop the function
